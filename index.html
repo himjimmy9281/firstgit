@@ -1,0 +1,128 @@
+
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>履歷 — 資料分析師</title>
+	<style>
+		:root{--bg:#f7f9fc;--card:#fff;--accent:#0b5fff;--muted:#6b7280}
+		*{box-sizing:border-box}
+		body{font-family:Inter,Segoe UI,Helvetica,Arial,sans-serif;background:var(--bg);color:#0f172a;margin:0;padding:24px}
+		.container{max-width:900px;margin:0 auto}
+		.card{background:var(--card);border-radius:12px;padding:28px;box-shadow:0 6px 20px rgba(15,23,42,0.06)}
+		header{display:flex;gap:20px;align-items:center}
+		.avatar{width:84px;height:84px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#6c9cff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:28px}
+		h1{margin:0;font-size:24px}
+		.meta{color:var(--muted);margin-top:6px}
+		.two-col{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:20px}
+		.section{margin-bottom:18px}
+		h2{font-size:15px;margin:0 0 10px 0}
+		ul{margin:0;padding-left:18px}
+		.skills{display:flex;flex-wrap:wrap;gap:8px}
+		.skill{background:#eef2ff;color:#0b3bff;padding:6px 8px;border-radius:8px;font-size:13px}
+		.tag{font-size:13px;color:var(--muted)}
+		.experience-item{margin-bottom:12px}
+		.exp-role{font-weight:600}
+		.muted{color:var(--muted);font-size:13px}
+		.print-hide{display:inline-block;margin-left:12px;padding:6px 10px;border-radius:8px;background:#0b5fff;color:#fff;text-decoration:none}
+		@media (max-width:820px){.two-col{grid-template-columns:1fr;}.avatar{width:64px;height:64px}}
+		@media print{body{padding:0} .print-hide{display:none} .card{box-shadow:none;border-radius:0}}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="card">
+			<header>
+				<div class="avatar">陳</div>
+				<div>
+					<h1>陳小明 — 資料分析師</h1>
+					<div class="meta">台北市 · +886 912 345 678 · hello@example.com · <a href="#" class="tag">LinkedIn / GitHub</a></div>
+				</div>
+				<div style="margin-left:auto">
+					<a href="#" onclick="window.print();return false" class="print-hide">列印履歷</a>
+				</div>
+			</header>
+
+			<div class="two-col">
+				<main>
+					<section class="section">
+						<h2>專業概要</h2>
+						<p class="muted">具備 4 年資料分析實務經驗，熟悉資料清理、探索性分析、建立儀表板與自動化報表流程。擅長將商業問題轉換為可量化指標，幫助產品與營運團隊做出資料驅動決策。</p>
+					</section>
+
+					<section class="section">
+						<h2>工作經驗</h2>
+						<div class="experience-item">
+							<div class="exp-role">資深資料分析師 — XYZ 科技 (2022 — 現在)</div>
+							<div class="muted">台北市 · 分析團隊</div>
+							<ul>
+								<li>建立公司核心 KPI 追蹤儀表板，將月度報告時間從 5 天縮短至 2 小時。</li>
+								<li>設計 A/B 試驗框架，分析使用者行為並提供建議，成功提升轉換率 8%。</li>
+								<li>以 SQL 與 Python 自動化 ETL 流程，節省人力並提升資料品質。</li>
+							</ul>
+						</div>
+
+						<div class="experience-item">
+							<div class="exp-role">資料分析師 — ABC 媒體 (2019 — 2022)</div>
+							<div class="muted">台北市 · 數據團隊</div>
+							<ul>
+								<li>負責流量分析與使用者分群，支援行銷投放策略與目標受眾設定。</li>
+								<li>導入 Power BI 儀表板，讓業務端可即時檢視活動效益。</li>
+								<li>主導資料品質檢查流程，減少 15% 的報表錯誤率。</li>
+							</ul>
+						</div>
+					</section>
+
+					<section class="section">
+						<h2>專案亮點</h2>
+						<ul>
+							<li><strong>自動化報表平台：</strong>使用 Airflow + Python 排程，每日生成多維度報表並上傳至內部共享空間。</li>
+							<li><strong>使用者留存分析：</strong>結合 cohort 與生存分析，提出改善建議使次月留存提升 6%。</li>
+							<li><strong>營收預測模型 (POC)：</strong>使用時間序列模型預測季度營收，MAPE 約 7%。</li>
+						</ul>
+					</section>
+				</main>
+
+				<aside>
+					<section class="section">
+						<h2>技能</h2>
+						<div class="skills">
+							<span class="skill">Python</span>
+							<span class="skill">SQL</span>
+							<span class="skill">Pandas</span>
+							<span class="skill">Power BI</span>
+							<span class="skill">Tableau</span>
+							<span class="skill">Airflow</span>
+							<span class="skill">Git</span>
+							<span class="skill">Excel (Pivot)</span>
+						</div>
+					</section>
+
+					<section class="section">
+						<h2>教育</h2>
+						<div class="muted">國立台灣大學 — 資訊管理學士 (2015 — 2019)</div>
+					</section>
+
+					<section class="section">
+						<h2>證照 & 工具</h2>
+						<ul>
+							<li>Google Data Analytics Professional Certificate</li>
+							<li>MySQL / PostgreSQL</li>
+							<li>Docker (基礎)</li>
+						</ul>
+					</section>
+
+					<section class="section">
+						<h2>語言</h2>
+						<ul>
+							<li>中文（母語）</li>
+							<li>英文（商務）</li>
+						</ul>
+					</section>
+				</aside>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
