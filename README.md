@@ -1,3 +1,2 @@
 # firstgit
-firstgit
-yep nothing here
+Just a firstgit
